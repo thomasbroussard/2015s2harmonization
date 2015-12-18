@@ -1,5 +1,6 @@
 package fr.tbr.addressbook.datamodel;
 
+
 public class Contact {
 
 	
