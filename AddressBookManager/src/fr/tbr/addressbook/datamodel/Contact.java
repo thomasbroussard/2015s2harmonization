@@ -12,6 +12,9 @@ public class Contact {
 	
 	AddressBook addressBook;
 
+	public Contact() {
+	}
+	
 	public Contact(String firstName, String lastName, String address,
 			String phoneNumber, AddressBook addressBook) {
 		super();
