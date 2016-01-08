@@ -35,6 +35,11 @@ public class ContactDAO {
 		}
 	}
 
+	/**
+	 * The save method saves one contact into the file.
+	 * 
+	 * @param contact the contact to be saved.
+	 */
 	public void save(Contact contact) {
 		this.writer.println("-- Contact --");
 		this.writer.println(contact.getFirstName());
@@ -46,9 +51,14 @@ public class ContactDAO {
 
 	}
 
-	// TODO implement that
+	
+	/**
+	 * The read all reads all the contacts from the file
+	 * @return
+	 */
 	public List<Contact> readAll() {
 		List<Contact> resultsList = new ArrayList<Contact>();
+		//While there is something to read
 		while (this.scanner.hasNext()) {
 			// Read one contact
 			this.scanner.nextLine();

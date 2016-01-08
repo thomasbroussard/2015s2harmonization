@@ -1,4 +1,4 @@
-# TODO
+# TODO (08/01/2015)
 - check my web site : [main description page](http://thomas-broussard.fr/work/java/courses/index.xhtml  "my web site") 
 - check the book head first : java
 - Open the printwriter in "append" mode
