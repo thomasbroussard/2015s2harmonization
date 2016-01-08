@@ -30,6 +30,12 @@ public class Main {
 
 		Contact contact1 = console.readContactFromConsole(addressBook);
 		contactDAO.save(contact1);
+		contactDAO.save(contact1);
+		contactDAO.save(contact1);
+		contactDAO.save(contact1);
+		
+		List<Contact> allContacts = contactDAO.readAll();
+		System.out.println(allContacts);
 		
 //		
 //		Contact contact4 = console.readContactFromConsole(addressBook);
@@ -41,7 +47,6 @@ public class Main {
 //		Contact contact2 = console.readContactFromConsole(addressBook);
 //		contactDAO.save(contact2);
 	
-		List<Contact> contactsList = contactDAO.readAll();
 		
 		console.terminate();
 

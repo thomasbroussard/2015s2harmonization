@@ -48,7 +48,19 @@ public class ContactDAO {
 
 	// TODO implement that
 	public List<Contact> readAll() {
-		return new ArrayList<Contact>();
+		List<Contact> resultsList = new ArrayList<Contact>();
+		while (this.scanner.hasNext()) {
+			// Read one contact
+			this.scanner.nextLine();
+			String firstName = this.scanner.nextLine();
+			String lastName = this.scanner.nextLine();
+			String address = this.scanner.nextLine();
+			String phoneNumber = this.scanner.nextLine();
+			this.scanner.nextLine();
+			Contact contact = new Contact(firstName, lastName, address, phoneNumber,null);
+			resultsList.add(contact);
+		}
+		return resultsList;
 	}
 
 	public void close() {
