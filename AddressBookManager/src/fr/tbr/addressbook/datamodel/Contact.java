@@ -1,19 +1,42 @@
 package fr.tbr.addressbook.datamodel;
 
 
+/**
+ * This is the main concept implementation for "Contact"
+ * Example :
+ * <pre><code> Contact contact = new Contact();</code> </pre>
+ * 
+ * @author tbrou
+ *
+ */
 public class Contact {
-
 	
+	private int id;
+
+	// 
 	private String firstName;
+	/* */ 
 	private String lastName;
 	private String address;
 	private String phoneNumber;
 	
 	private AddressBook addressBook;
 
+	
+	/**
+	 * 
+	 */
 	public Contact() {
 	}
 	
+	/**
+	 * 
+	 * @param firstName
+	 * @param lastName
+	 * @param address
+	 * @param phoneNumber
+	 * @param addressBook
+	 */
 	public Contact(String firstName, String lastName, String address,
 			String phoneNumber, AddressBook addressBook) {
 
@@ -70,6 +93,14 @@ public class Contact {
 
 	public void setAddressBook(AddressBook addressBook) {
 		this.addressBook = addressBook;
+	}
+
+	public int getId() {
+		return this.id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 
